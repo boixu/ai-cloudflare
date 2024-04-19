@@ -18,7 +18,7 @@ export async function POST(req: Request) {
 			],
 		};
 		const response = await fetch(
-			`https://api.cloudflare.com/client/v4/accounts/${process.env.CLOUDFLARE_ACCOUNT_ID}/ai/run/@cf/meta/llama-2-7b-chat-fp16`,
+			`https://api.cloudflare.com/client/v4/accounts/${process.env.CLOUDFLARE_ACCOUNT_ID}/ai/run/@cf/meta/llama-3-8b-instruct`,
 			{
 				method: "POST",
 				headers: {

@@ -20,7 +20,7 @@ export async function POST(req: Request) {
 		];
 
 		const response = await fetch(
-			`https://api.cloudflare.com/client/v4/accounts/${process.env.CLOUDFLARE_ACCOUNT_ID}/ai/run/@hf/mistral/mistral-7b-instruct-v0.2`,
+			`https://api.cloudflare.com/client/v4/accounts/${process.env.CLOUDFLARE_ACCOUNT_ID}/ai/run/@hf/thebloke/deepseek-coder-6.7b-base-awq`,
 			{
 				method: "POST",
 				headers: {
